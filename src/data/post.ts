@@ -35,10 +35,10 @@ export function published(posts: MarkdownInstance[]): Post[] {
 
 export function getRSS(posts: MarkdownInstance[]) {
 	return {
-		title: 'Astro Blog',
-		description: 'Astro Blog Feed',
+		title: 'Tsec Blog',
+		description: 'Tsec Blog Feed',
 		stylesheet: true,
-		customData: `<language>en-us</language>`,
+		customData: `<language>zh-cn</language>`,
 		items: published(posts).map((post: Post) => ({
 			title: post.title,
 			description: post.desc,
